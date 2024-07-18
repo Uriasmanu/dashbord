@@ -8,9 +8,9 @@ import dribble from '../../../../public/imagens/dribble.png';
 
 const ContainerMenuLateral = styled.div`
     z-index: 1;
-    margin-top: 5%;
     position: relative;
-    left: 5%;
+    left: 4%;
+    margin-top: 9%;
 
     .redeSocial{
         border-radius: 50%;
@@ -21,6 +21,8 @@ const ContainerMenuLateral = styled.div`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        gap: 3%;
+        height: 300px;
     }
 `
 
