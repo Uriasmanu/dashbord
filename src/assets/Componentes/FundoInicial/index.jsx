@@ -8,13 +8,14 @@ const ContainerFundoInicio = styled.div`
     position: absolute;
     left: 2%;
     width: 96vw;
-    height: 50vh;
+    height: 40vh;
     padding-bottom: 5%;
     border-radius: 25px;
     padding: 2%;
     background-image: url(${fundo});
     background-repeat: no-repeat;
     background-size: cover;
+   
 
     
 
