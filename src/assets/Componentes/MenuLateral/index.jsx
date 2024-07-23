@@ -4,7 +4,7 @@ import whatsapp from '/imagens/whatsapp.png';
 import arrow from '/imagens/arrow.svg';
 import linkdin from '/imagens/linkdin.png';
 import dribble from '/imagens/dribble.png';
-import { useState } from "react";
+import { useAppContext } from "../../Context";
 
 
 const ContainerMenuLateral = styled.div`
@@ -112,12 +112,12 @@ const ContainerMenuLateral = styled.div`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
-        height: 300px;
+        
     }
 `
 
 const Menulateral = () => {
-    const [isChecked, setIsChecked] = useState(false);
+    const {isChecked, setIsChecked} = useAppContext();
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);

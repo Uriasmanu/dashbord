@@ -8,7 +8,7 @@ const ContainerFundoInicio = styled.div`
     position: absolute;
     left: 2%;
     width: 96vw;
-    height: 40vh;
+    height: 45vh;
     padding-bottom: 5%;
     border-radius: 25px;
     padding: 2%;

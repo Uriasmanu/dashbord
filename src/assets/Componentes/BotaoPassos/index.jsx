@@ -50,7 +50,7 @@ const BotaoPassos = () => {
         <ContainerBotaoPassos>
             <div className="radio-inputs">
                 <label className="radio">
-                    <input type="radio" name="radio" checked/>
+                    <input type="radio" name="radio" checked={true}/>
                         <span className="name">Gastos</span>
                 </label>
                 <label className="radio">
