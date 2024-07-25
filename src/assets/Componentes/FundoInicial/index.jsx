@@ -6,16 +6,24 @@ import fundo from '/imagens/fundo.svg'
 
 const ContainerFundoInicio = styled.div`
     position: absolute;
-    left: 2%;
-    width: 96vw;
-    height: 45vh;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
     padding-bottom: 5%;
     border-radius: 25px;
     padding: 2%;
     background-image: url(${fundo});
     background-repeat: no-repeat;
     background-size: cover;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img{
+            margin-top: 25%;
+            width: 65%;
+            height: auto;
+        }
 
     
 
@@ -23,12 +31,12 @@ const ContainerFundoInicio = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        
-
+        height: 45vh;
+        width: 96vw;
+        left: 2%;
 
         img{
             margin-top: 5%;
-            width: 244px;
             height: auto;
         }
 
@@ -38,7 +46,6 @@ const ContainerFundoInicio = styled.div`
 const FundoInicial = () => {
     return (
         <ContainerFundoInicio>
-
             <BotaoPassos />
             <img src={grafico} alt="imagem de um grafico" />
         </ContainerFundoInicio>
